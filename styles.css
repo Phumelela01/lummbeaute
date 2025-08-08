@@ -1,0 +1,844 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.top-contact-bar {
+    background: linear-gradient(to right, #000, #333);
+    padding: 8px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.contact-left {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: white;
+}
+
+.contact-item .icon {
+    color: #ffd700;
+}
+
+.closed-status {
+    color: #ff6b6b !important;
+}
+
+.main-header {
+    padding: 16px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    height: 64px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.tagline {
+    color: #666;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.location .icon {
+    color: #ffd700;
+}
+
+.navigation {
+    background: #000;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    padding: 12px 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #f9f9f9, #fff8dc);
+    padding: 64px 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.service-card {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #ffd700;
+}
+
+.service-card h3 {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.policy-box {
+    background: #000;
+    color: white;
+    padding: 24px;
+    border-radius: 8px;
+    border: 2px solid #ffd700;
+}
+
+.policy-box h4 {
+    font-weight: 600;
+    color: #ffd700;
+    margin-bottom: 8px;
+}
+
+.policy-box ul {
+    list-style: none;
+    color: #ccc;
+}
+
+.policy-box li {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.hero-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 2px solid #ffd700;
+}
+
+.hero-img.img2 {
+    margin-top: 32px;
+}
+
+.hero-img.img3 {
+    margin-top: -32px;
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 64px 0;
+    background: white;
+}
+
+.gallery-category {
+    margin-bottom: 48px;
+}
+
+.gallery-category h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 24px;
+    background: #000;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.gallery-item {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 256px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Training Section */
+.training-section {
+    padding: 64px 0;
+    background: linear-gradient(to right, #fff8dc, #f9f9f9);
+}
+
+.training-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.feature-card {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #ffd700;
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.feature-card h4 {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+}
+
+.course-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    border: 1px solid #ffd700;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.course-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    flex: 1;
+}
+
+.duration {
+    background: #fff8dc;
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #ffd700;
+}
+
+.course-card > p {
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.course-features {
+    list-style: none;
+}
+
+.course-features li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.course-features li::before {
+    content: '•';
+    color: #ffd700;
+    font-weight: bold;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffd700;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.training-cta {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.training-cta p {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.cta-button {
+    background: #000;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 2px solid #ffd700;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #333;
+}
+
+/* Prices Section */
+.prices-section {
+    padding: 64px 0;
+    background: #f9f9f9;
+}
+
+.price-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.price-category {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 1px solid #ffd700;
+}
+
+.category-header {
+    background: #000;
+    color: white;
+    padding: 16px 24px;
+    border-bottom: 2px solid #ffd700;
+}
+
+.category-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.price-list {
+    padding: 24px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.price-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service-info h4 {
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.service-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.price {
+    color: #ffd700;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 16px;
+    flex-shrink: 0;
+}
+
+.training-prices {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ffd700;
+}
+
+.training-prices h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.training-price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.training-price-column {
+    text-align: left;
+}
+
+.course-name {
+    font-weight: 500;
+    color: #000;
+}
+
+.course-price {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+.training-note {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 64px 0;
+    background: white;
+}
+
+.booking-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.booking-form {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #ffd700;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group label .icon {
+    color: #ffd700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+
+.form-submit {
+    margin-bottom: 16px;
+}
+
+.submit-button {
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #333;
+}
+
+.form-note {
+    text-align: center;
+}
+
+.form-note p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: white;
+    padding: 48px 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 16px;
+}
+
+.footer-section h4 {
+    font-weight: 600;
+    color: #ffd700;
+    margin-bottom: 16px;
+}
+
+.footer-section p {
+    color: #ccc;
+    margin-bottom: 16px;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ffd700;
+}
+
+.contact-list {
+    space: 12px;
+}
+
+.contact-list .contact-item {
+    color: #ccc;
+    margin-bottom: 12px;
+}
+
+.contact-list .icon {
+    color: #ffd700;
+}
+
+.service-list {
+    list-style: none;
+    color: #ccc;
+}
+
+.service-list li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 32px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.copyright {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.policy-notice {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.important {
+    color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .hero-images {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-img.img2,
+    .hero-img.img3 {
+        margin-top: 0;
+    }
+    
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    
+    .nav-list {
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    .training-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .price-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .training-price-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero-section,
+    .gallery-section,
+    .training-section,
+    .prices-section,
+    .booking-section {
+        padding: 48px 0;
+    }
+    
+    .hero-text h2 {
+        font-size: 28px;
+    }
+    
+    .training-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .booking-form {
+        padding: 24px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation for gallery items */
+.gallery-item {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
